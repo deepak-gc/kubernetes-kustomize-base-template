@@ -1,12 +1,12 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: default
+  name: nginx-deployment
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: default
+    name: nginx-deployment
   minReplicas: 1
   maxReplicas: 5
   metrics:
