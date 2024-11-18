@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opa-policy-test
+  annotations:
+    openpolicyagent.org/policy-status: active  # This is the annotation your Lua script checks
+data:
+  example-key: example-value
